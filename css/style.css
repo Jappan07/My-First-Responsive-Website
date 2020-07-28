@@ -1,0 +1,281 @@
+/* css reset stuff */
+/* this is reseting done to override website defaults*/
+*{ 
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+/* main styles */
+
+
+
+/* header styles */
+header {
+    background-color: #222;
+    color: #FFF;
+    padding: 20px 30px; /*top-bottom left-right */
+}
+
+/* logo */
+header #logo{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 49%;
+
+}
+
+header #logo img{
+    width: 50px;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* main navigation */
+header #main-navigation{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+
+
+}
+
+header #main-navigation ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+header #main-navigation ul li{
+    display: inline-block;
+    
+
+
+}
+
+header #main-navigation ul li a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: 0.3s ease all;
+
+}
+
+header #main-navigation ul li a:hover{
+    background-color: #444;
+}
+
+/* styling footer */
+footer{
+    background: #222 ;
+    color: #FFF;
+    padding: 20px 30px;
+    text-align: center;
+
+}
+
+footer img{
+    display: block;
+    width: 80px;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+}
+
+/* styling main content */
+
+/* hero section */
+
+.hero{
+    min-height: 800px;
+    text-align: center;
+    background-image: url("../assets/bg.jpeg");
+    background-size: cover;
+}
+
+.hero-content{
+    color: #FFF;
+    padding-top: 130px;
+    line-height: 1;
+}
+
+.hero-title{
+    margin: 0;
+    font-size: 100px;
+    
+}
+
+.hero-content p{
+    font-size: 50px;
+    margin-bottom: 60px;
+
+}
+
+.hero-content a{
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    padding: 15px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 28px;
+
+}
+
+/* site section stylings */
+.site-section{
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+.site-section-inside{
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-section-secondary{
+    background-color: #EFEFEF;
+}
+
+.section-header{
+    text-align: center;
+   
+    margin-bottom: 30px;
+}
+
+.section-header h2{
+     color: #777;
+     letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 28px ;
+}
+
+/* feature boxes */
+.feature-box{
+    display: inline-block;
+    width: 33%;
+    padding :20px 30px ;
+    line-height: 1;
+    text-align: center;
+}
+
+.feature-box img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-box h5{
+    margin-top:0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight:300;
+    letter-spacing: 2px;
+}
+
+/* testimonial boxes */
+.testimonial-box{
+    display: inline-block;
+    width: 33%;
+    padding: 20px 30px;
+}
+
+.testimonial-content{
+    background: #FFF;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+}
+
+.testimonial-author{
+
+
+}
+
+.testimonial-author img{
+    float: left;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonial-author h5{
+    font-size: 18px;
+    margin: 0;
+}
+
+.testimonial-author span{
+    color: #999;
+    font-size: 14px;
+}
+
+/* responsive */
+/* mobile stylings */
+/* 768px is a common breakpoint between different sizes of display */
+/* this will handle when our websites gets below the breakpoint i.e 768px */
+@media screen and (max-width:768px){
+
+    /* header */
+    header #logo{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    header #main-navigation {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    /* hero section */
+    .hero {
+        min-height: 300px;
+    }
+    .hero-content{
+        padding-top: 80px;
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+    .hero-content p{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .hero-content a{
+        font-size: 14px;
+        padding: 10px 15px;
+        border-width:1px;
+        background: #FFF;
+        color: #333;
+    }
+
+    /* feature boxes */
+    .feature-box{
+        width: 100%;
+        display: block;
+    }
+
+    /* testimonial boxes */
+    .testimonial-box{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+
+}
