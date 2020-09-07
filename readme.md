@@ -1,4 +1,4 @@
-# My first responsive website
+# Responsive website
 It is a simple responsive website made using javascript, html5 and css.
 
 ## Above 768px
